@@ -1,0 +1,15 @@
+Without using any external sources, this pair uses only following iOS frameworks:
+(Intentionally, left #import statement for easier copy and paste.)
+#import <QuartzCore/QuartzCore.h>
+#import <CoreMedia/CoreMedia.h>
+#import <AVFoundation/AVFoundation.h>
+#import <ImageIO/ImageIO.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
+In FXDinterfaceCapture, UIKit objects are also IBOutlets.
+This way make the class to be usable with .nib of your choice
+
+For unknown reason, UIViewController's own - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation; isnt' working correctly.
+It's not being called when it's returning to be Portrait from other orientation.
+So, I used UIDeviceOrientationDidChangeNotification instead, have it observed by CONTROL object.
+

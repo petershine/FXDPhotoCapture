@@ -11,4 +11,26 @@
 #ifdef __OBJC__
 	#import <UIKit/UIKit.h>
 	#import <Foundation/Foundation.h>
+
+
+//MARK: For logging with useful information about the class and method
+	#define strClassSelector	[NSString stringWithFormat:@"[%@ %@]", NSStringFromClass([self class]), NSStringFromSelector(_cmd)]
+	#define FXDLog	NSLog
+
+	#if DEBUG
+		#define FXDLog_DEFAULT	FXDLog(@" ");FXDLog(@"%@", strClassSelector)
+		#define FXDLog_SEPARATE	FXDLog(@"\n\n__  %@  __", strClassSelector)
+		#define FXDLog_OVERRIDE	FXDLog_DEFAULT;FXDLog(@"OVERRIDE")
+		#define FXDLog_ERROR	FXDLog(@"error code: %d\nlocalizedDescription: %@\nuserInfo: %@",[error code],[error localizedDescription],[error userInfo])
+		#define FXDLog_TOBEIMPLEMENTED	[PHMcontrolGlobal alertForTestWithMessage:@"To be Implemented..."]
+	#else
+		#define FXDLog_DEFAULT
+		#define FXDLog_SEPARATE
+		#define FXDLog_OVERRIDE
+		#define FXDLog_ERROR
+		#define FXDLog_TOBEIMPLEMENTED
+
+	#endif
+
+
 #endif

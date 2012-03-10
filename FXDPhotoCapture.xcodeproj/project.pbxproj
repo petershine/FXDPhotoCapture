@@ -13,6 +13,13 @@
 		43FA1FA715075AB3007BCE70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43FA1FA515075AB3007BCE70 /* InfoPlist.strings */; };
 		43FA1FA915075AB3007BCE70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FA1FA815075AB3007BCE70 /* main.m */; };
 		43FA1FAD15075AB3007BCE70 /* FXDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FA1FAC15075AB3007BCE70 /* FXDAppDelegate.m */; };
+		43FA1FBD15075C27007BCE70 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FA1FBC15075C27007BCE70 /* AVFoundation.framework */; };
+		43FA1FBF15075C2F007BCE70 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FA1FBE15075C2F007BCE70 /* ImageIO.framework */; };
+		43FA1FC115075C45007BCE70 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FA1FC015075C45007BCE70 /* QuartzCore.framework */; };
+		43FA1FC715075CEB007BCE70 /* FXDcontrolCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FA1FC415075CEB007BCE70 /* FXDcontrolCapture.m */; };
+		43FA1FC815075CEB007BCE70 /* FXDinterfaceCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FA1FC615075CEB007BCE70 /* FXDinterfaceCapture.m */; };
+		43FA1FCA15075D40007BCE70 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FA1FC915075D40007BCE70 /* CoreMedia.framework */; };
+		43FA1FCC150764CF007BCE70 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FA1FCB150764CF007BCE70 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +27,21 @@
 		43FA1F9C15075AB3007BCE70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43FA1F9E15075AB3007BCE70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43FA1FA015075AB3007BCE70 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		43FA1FA415075AB3007BCE70 /* FXDPhotoCapture-Info.plist */ = {isa = PBXFileReference; path = "FXDPhotoCapture-Info.plist"; sourceTree = "<group>"; };
+		43FA1FA415075AB3007BCE70 /* FXDPhotoCapture-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FXDPhotoCapture-Info.plist"; sourceTree = "<group>"; };
 		43FA1FA615075AB3007BCE70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43FA1FA815075AB3007BCE70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		43FA1FAA15075AB3007BCE70 /* FXDPhotoCapture-Prefix.pch */ = {isa = PBXFileReference; path = "FXDPhotoCapture-Prefix.pch"; sourceTree = "<group>"; };
-		43FA1FAB15075AB3007BCE70 /* FXDAppDelegate.h */ = {isa = PBXFileReference; path = FXDAppDelegate.h; sourceTree = "<group>"; };
+		43FA1FAA15075AB3007BCE70 /* FXDPhotoCapture-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FXDPhotoCapture-Prefix.pch"; sourceTree = "<group>"; };
+		43FA1FAB15075AB3007BCE70 /* FXDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXDAppDelegate.h; sourceTree = "<group>"; };
 		43FA1FAC15075AB3007BCE70 /* FXDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXDAppDelegate.m; sourceTree = "<group>"; };
+		43FA1FBC15075C27007BCE70 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		43FA1FBE15075C2F007BCE70 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		43FA1FC015075C45007BCE70 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		43FA1FC315075CEB007BCE70 /* FXDcontrolCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXDcontrolCapture.h; sourceTree = "<group>"; };
+		43FA1FC415075CEB007BCE70 /* FXDcontrolCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXDcontrolCapture.m; sourceTree = "<group>"; };
+		43FA1FC515075CEB007BCE70 /* FXDinterfaceCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXDinterfaceCapture.h; sourceTree = "<group>"; };
+		43FA1FC615075CEB007BCE70 /* FXDinterfaceCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXDinterfaceCapture.m; sourceTree = "<group>"; };
+		43FA1FC915075D40007BCE70 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		43FA1FCB150764CF007BCE70 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FA1FCC150764CF007BCE70 /* MobileCoreServices.framework in Frameworks */,
+				43FA1FCA15075D40007BCE70 /* CoreMedia.framework in Frameworks */,
+				43FA1FC115075C45007BCE70 /* QuartzCore.framework in Frameworks */,
+				43FA1FBF15075C2F007BCE70 /* ImageIO.framework in Frameworks */,
+				43FA1FBD15075C27007BCE70 /* AVFoundation.framework in Frameworks */,
 				43FA1F9D15075AB3007BCE70 /* UIKit.framework in Frameworks */,
 				43FA1F9F15075AB3007BCE70 /* Foundation.framework in Frameworks */,
 				43FA1FA115075AB3007BCE70 /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +66,11 @@
 		43FA1F8D15075AB3007BCE70 = {
 			isa = PBXGroup;
 			children = (
+				43FA1FCB150764CF007BCE70 /* MobileCoreServices.framework */,
+				43FA1FC915075D40007BCE70 /* CoreMedia.framework */,
+				43FA1FC015075C45007BCE70 /* QuartzCore.framework */,
+				43FA1FBE15075C2F007BCE70 /* ImageIO.framework */,
+				43FA1FBC15075C27007BCE70 /* AVFoundation.framework */,
 				43FA1FA215075AB3007BCE70 /* FXDPhotoCapture */,
 				43FA1F9B15075AB3007BCE70 /* Frameworks */,
 				43FA1F9915075AB3007BCE70 /* Products */,
@@ -72,6 +98,7 @@
 		43FA1FA215075AB3007BCE70 /* FXDPhotoCapture */ = {
 			isa = PBXGroup;
 			children = (
+				43FA1FC215075CEB007BCE70 /* PhotoCapture */,
 				43FA1FAB15075AB3007BCE70 /* FXDAppDelegate.h */,
 				43FA1FAC15075AB3007BCE70 /* FXDAppDelegate.m */,
 				43FA1FA315075AB3007BCE70 /* Supporting Files */,
@@ -88,6 +115,17 @@
 				43FA1FAA15075AB3007BCE70 /* FXDPhotoCapture-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43FA1FC215075CEB007BCE70 /* PhotoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				43FA1FC315075CEB007BCE70 /* FXDcontrolCapture.h */,
+				43FA1FC415075CEB007BCE70 /* FXDcontrolCapture.m */,
+				43FA1FC515075CEB007BCE70 /* FXDinterfaceCapture.h */,
+				43FA1FC615075CEB007BCE70 /* FXDinterfaceCapture.m */,
+			);
+			path = PhotoCapture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +156,7 @@
 			attributes = {
 				CLASSPREFIX = FXD;
 				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = fXceed;
 			};
 			buildConfigurationList = 43FA1F9215075AB3007BCE70 /* Build configuration list for PBXProject "FXDPhotoCapture" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -154,6 +193,8 @@
 			files = (
 				43FA1FA915075AB3007BCE70 /* main.m in Sources */,
 				43FA1FAD15075AB3007BCE70 /* FXDAppDelegate.m in Sources */,
+				43FA1FC715075CEB007BCE70 /* FXDcontrolCapture.m in Sources */,
+				43FA1FC815075CEB007BCE70 /* FXDinterfaceCapture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +231,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -207,7 +248,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -220,6 +261,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FXDPhotoCapture/FXDPhotoCapture-Prefix.pch";
 				INFOPLIST_FILE = "FXDPhotoCapture/FXDPhotoCapture-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -231,6 +273,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FXDPhotoCapture/FXDPhotoCapture-Prefix.pch";
 				INFOPLIST_FILE = "FXDPhotoCapture/FXDPhotoCapture-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -255,6 +298,7 @@
 				43FA1FB215075AB3007BCE70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
